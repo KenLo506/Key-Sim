@@ -1,12 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+;
+
+*{
+  box-sizing: border-box;
+}
+
 
 body{ 
   font-family: 'Raleway', sans-serif;
 }
 
-  h3, p { 
+h3 { 
     display: inline 
-    
-  }
+}
+
+.words{
+  font-family: "Nunito", sans-serif;
+  font-size: large;
+  margin-bottom: 2rem;
+}
+
+.box-input{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 8rem;
+  margin:auto;
+  resize: none;
+  
+}
 
 header{ 
   display: flex;
@@ -18,32 +39,53 @@ header{
     height: 70px;
     width: 70x;
     justify-content: center;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
-.typer-sim{ 
+.title{ 
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 1.5rem;
     text-align: center;
+    margin-left: 15px;
 }
 
 .background{
-    height: 100vh;
-    width: 100vw;
+    height:100vh;
+    width:auto;
     overflow: hidden;
     background-color: #FFF5E6;
 }
 
 .text-typer{ 
-  display: flex; 
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
   height: 300px;
-  margin: 10px;
-  border-radius: 4px;
-  background-color: red;
+  width: 900px;
+  display:inline-block;
+  text-align:center;
+  background-color: white;
+  margin-top: 3rem;
+  max-width: 80%;
+  padding: 2rem;
 }
 
+.text-typer-holder{
+  text-align:center; 
+  justify-content: center;
+  border: 2px groove white;
+  height: 500px;
+  display:flex;
+}
+
+.correct {
+  color: white;
+}
+
+.incorrect {
+  color: red;
+  text-decoration: underline;
+}
+
+.skip{
+  font-family: "Nunito", sans-serif;
+  margin-top: 1rem;
+}
