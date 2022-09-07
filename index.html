@@ -5,15 +5,14 @@
   <meta charset="utf-8">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  
- 
- 
+
     <link rel="stylesheet" href="index.css" media="screen">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <title>TyperSim</title>
     
+    <title>TyperSim</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
   <!-- Body -->
   <body>
@@ -34,12 +33,31 @@
         <div class= "text-typer"> 
           <div class = "words" id="words" ></div>
           <textarea class = "box-input" id="box-input" autofocus> </textarea>
-          <button class = "skip"> skip </button>
+          <button class = "skip" id = "skip"> skip </button>
+
+        <div class="dropdown">
+          <button class = "dropdown-button" id = "dropdown-button">    Default (no sound)    </button>
+          <div class="dropdown-content">
+            <a rel="noopener" option value="0" selected="">Alpacas</option>
+            <a rel="noopener" option value="0"selected="">NovelKeys Creams</option>
+            <a rel="noopener" option value="0"selected="">Gateron Black Ink</option>
+            <a rel="noopener" option value="0"selected="">Cherry MX Browns</option>
+            <a rel="noopener" option value="0"selected="">Turquoise Tealios</option>
+          </div>
         </div>
+
         <!-- end of text-typer -->        
         </div>
     </div>
     <!-- End of text background -->
+
+    <!-- Audio -->
+    
+      <audio id=alarm>
+          <source src=sound/zbluejay.wav>
+      </audio>
+
+    <!-- Audio -->
 
     <!-- Footer -->
     <footer class="footer">

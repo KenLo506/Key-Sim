@@ -1,6 +1,8 @@
 const random_quote_api = 'http://api.quotable.io/random'
 const wordElement = document.getElementById('words')
 const inputElement = document.getElementById('box-input')
+const buttonElement = document.getElementById('skip')
+//const audioElement = document.getElementById()
 
 inputElement.addEventListener('input', () => {
   const arrayQuote = wordElement.querySelectorAll('span')
@@ -26,6 +28,12 @@ inputElement.addEventListener('input', () => {
   if (correct) renderQuote()
 })
 
+
+buttonElement.addEventListener("click", () => {
+  renderQuote();
+})
+
+
 function getQuote() {
   return fetch(random_quote_api)
     .then(response => response.json())
@@ -44,4 +52,4 @@ async function renderQuote() {
 }
 
 renderQuote()
-123
+
