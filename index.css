@@ -18,6 +18,7 @@ h3 {
   font-family: "Nunito", sans-serif;
   font-size: large;
   margin-bottom: 2rem;
+  color: #7D5448;
   
 }
 
@@ -33,13 +34,15 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #7D5448;
+  margin-right: 20px;
 }
 
 .switch{
     height: 70px;
     width: 70x;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 38px;
 }
 
 .title{ 
@@ -54,7 +57,8 @@ header{
     height:100vh;
     width:auto;
     overflow: hidden;
-    background-color: #fff5e6;
+    flex-grow: 1;
+    background-color: rgb(238, 221, 211);
 }
 
 .text-typer{ 
@@ -62,21 +66,23 @@ header{
   width: 900px;
   display:inline-block;
   text-align:center;
-  background-color: white;
+  background-color: rgb(238, 221, 211);
   margin-top: 3rem;
   max-width: 80%;
   padding: 2rem;
+  
 }
 
 .text-typer-holder{
   text-align:center; 
   justify-content: center;
-  height: 850px;
+  min-height: 850px;
   display:flex;
+  flex-grow: 1;
 }
 
 .correct {
-  color: rgb(93, 253, 0);
+  color: rgb(255, 255, 255);
 }
 
 .incorrect {
@@ -123,4 +129,15 @@ header{
 .dropdown-content a:hover {
   color: #FFFFFF;
   background-color: #75717183;
+}
+
+.footer{
+  background-color: white;
+  margin-top: 40px;
+  display:flex;
+}
+
+.profile-website{
+  margin-top: 15px;
+  margin-left: 30px;
 }
