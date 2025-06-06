@@ -32,17 +32,17 @@
         <!-- text-typer -->
         <div class= "text-typer"> 
           <div class = "words" id="words" ></div>
-          <textarea class = "box-input" id="box-input" autofocus> </textarea>
+          <div class="cursor" id="cursor"></div>
           <button class = "skip" id = "skip"> skip </button>
 
         <div class="dropdown">
           <button class = "dropdown-button" id = "dropdown-button">    Default (no sound)    </button>
           <div class="dropdown-content">
-            <a rel="noopener" option value="0" selected="">Alpacas</option>
-            <a rel="noopener" option value="0"selected="">NovelKeys Creams</option>
-            <a rel="noopener" option value="0"selected="">Gateron Black Ink</option>
-            <a rel="noopener" option value="0"selected="">Cherry MX Browns</option>
-            <a rel="noopener" option value="0"selected="">Turquoise Tealios</option>
+            <a href="#" data-sound="alpacas">Alpacas</a>
+            <a href="#" data-sound="novelkeyscreams">NovelKeys Creams</a>
+            <a href="#" data-sound="gateronblackink">Gateron Black Ink</a>
+            <a href="#" data-sound="cherrymxbrowns">Cherry MX Browns</a>
+            <a href="#" data-sound="turquoisetealios">Turquoise Tealios</a>
           </div>
         </div>
 
@@ -53,26 +53,13 @@
 
     <!-- Audio -->
     
-      <audio id=alpacas>
-          <source src=sound/zbluejay.wav>
-      </audio>
-
-      <audio id=novelkeyscreams>
-        <source src=sound/zbluejay.wav>
-      </audio>
-
-      <audio id=gateronblackink>
-      <source src=sound/zbluejay.wav>
-      </audio>
-
-      <audio id=cherrymxbrowns>
-        <source src=sound/zbluejay.wav>
-      </audio>
-
-      <audio id=turquoisetealios>
-        <source src=sound/zbluejay.wav>
-      </audio>
-
+      <audio id="key1" src="sounds/key1.wav"></audio>
+      <audio id="key2" src="sounds/key2.wav"></audio>
+      <audio id="key3" src="sounds/key3.wav"></audio>
+      <audio id="key4" src="sounds/key4.wav"></audio>
+      <audio id="enter" src="sounds/enter.wav"></audio>
+      <audio id="backspace" src="sounds/backspace.wav"></audio>
+      <audio id="space" src="sounds/space.wav"></audio>
 
     <!-- Audio -->
 
@@ -81,7 +68,7 @@
       <p class="u-text">
         <span>Made by: Ken Lo</span>
       </p>
-      <a class="profile-website" id = "profile-website" href="" target="_blank">
+      <a class="profile-website" id = "profile-website" href="https://kenloportfolio.vercel.app/" target="_blank">
         <span>Portfolio Website</span>
       </a>
     </footer>
